@@ -2,19 +2,22 @@
 #include <iostream>
 #include <iterator>
 
-int main() {
-  int zero[5]{};  // initializes all elements to 0
+int main()
+{
+  int zero[5]{}; // initializes all elements to 0
 
   std::cout << "zero = [ ";
-  for (std::size_t i = 0; i < std::size(zero); ++i) {
+  for (std::size_t i = 0; i < std::size(zero); ++i)
+  {
     std::cout << zero[i] << ' ';
   }
   std::cout << "]\n";
 
   // int garbage[5]; // NOT initialized. Reading these values is UB (undefined behavior).
   // Instead of printing, we just show how to initialize safely:
-  int ok[5];  // declared
-  for (std::size_t i = 0; i < std::size(ok); ++i) {
+  int ok[5]; // declared
+  for (std::size_t i = 0; i < std::size(ok); ++i)
+  {
     ok[i] = static_cast<int>(i + 1);
   }
 

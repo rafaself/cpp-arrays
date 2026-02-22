@@ -25,6 +25,5 @@ int main()
   }
   std::cout << "Sum = " << sum << "\n";
 
-  // Important: always respect bounds. a[5] would be out-of-bounds (UB).
   return 0;
 }

@@ -37,6 +37,6 @@ File: `07_2d_arrays_and_flatten.cpp`
 ## How to build and run
 
 ```bash
-g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g array/07_2d_arrays_and_flatten.cpp -o app
+g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g 07_2d_arrays_and_flatten.cpp -o app
 ./app
 ```

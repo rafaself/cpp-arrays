@@ -12,14 +12,14 @@ This mini-course covers “classic” C arrays (`T a[N]`) and modern STL alterna
 One example (replace with the file you want):
 
 ```bash
-g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g array/01_basic_c_array.cpp -o app
+g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g 01_basic_c_array.cpp -o app
 ./app
 ```
 
 Build all examples (one executable per file):
 
 ```bash
-for f in array/*.cpp; do
+for f in *.cpp; do
   g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g "$f" -o "${f%.cpp}"
 done
 ```
@@ -27,7 +27,7 @@ done
 Run, for example:
 
 ```bash
-./array/10_stl_algorithms
+./10_stl_algorithms
 ```
 
 ## Index (modules)
@@ -45,4 +45,3 @@ Run, for example:
 10. [STL algorithms on arrays](./10_stl_algorithms.md)
 11. [Mini-project: ring buffer with `std::array`](./11_mini_project_ring_buffer.md)
 12. [Pointer to array vs array of pointers](./12_pointer_to_array_vs_array_of_pointers.md)
-# cpp-arrays

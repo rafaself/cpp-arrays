@@ -54,7 +54,7 @@ int main()
   std::cout << "2) array reference (C array): " << sum_ref_array(c_array) << "\n";
   std::cout << "3) std::array&: " << sum_std_array(stl_array) << "\n";
   std::cout << "4) std::span (C array): " << sum_span(c_array) << "\n";
-  std::cout << "4) std::span (std::array): " << sum_span(stl_array) << "\n";
+  std::cout << "5) std::span (std::array): " << sum_span(stl_array) << "\n";
 
   // A nice span bonus: pass "subviews" without copying.
   std::span<const int> sub = std::span<const int>(c_array).subspan(1, 2); // [2,3]

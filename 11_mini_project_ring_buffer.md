@@ -89,6 +89,6 @@ File: `11_mini_project_ring_buffer.cpp`
 ## How to build and run
 
 ```bash
-g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g array/11_mini_project_ring_buffer.cpp -o app
+g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g 11_mini_project_ring_buffer.cpp -o app
 ./app
 ```

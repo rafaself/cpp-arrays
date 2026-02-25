@@ -44,6 +44,6 @@ In `main`, we call each function with a C array and/or `std::array` to compare e
 This module uses **C++20** because of `std::span`.
 
 ```bash
-g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g array/05_passing_arrays_to_functions.cpp -o app
+g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g 05_passing_arrays_to_functions.cpp -o app
 ./app
 ```

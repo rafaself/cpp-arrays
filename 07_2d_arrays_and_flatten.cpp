@@ -3,7 +3,7 @@
 #include <iostream>
 #include <vector>
 
-void imprime_matriz_3x4(const int m[3][4]) {
+void print_matrix_3x4(const int m[3][4]) {
   for (std::size_t r = 0; r < 3; ++r) {
     for (std::size_t c = 0; c < 4; ++c) {
       std::cout << std::setw(4) << m[r][c];
@@ -24,8 +24,8 @@ int main() {
     }
   }
 
-  std::cout << "Matriz int m[3][4] (row-major):\n";
-  imprime_matriz_3x4(m);
+  std::cout << "Matrix int m[3][4] (row-major):\n";
+  print_matrix_3x4(m);
 
   const std::size_t rows = 3;
   const std::size_t cols = 4;
@@ -37,7 +37,7 @@ int main() {
     }
   }
 
-  std::cout << "\nVersao flatten (std::vector<int>) usando idx = r*cols + c:\n";
+  std::cout << "\nFlattened version (std::vector<int>) using idx = r*cols + c:\n";
   for (std::size_t r = 0; r < rows; ++r) {
     for (std::size_t c = 0; c < cols; ++c) {
       std::cout << std::setw(4) << flat[idx_row_major(r, c, cols)];

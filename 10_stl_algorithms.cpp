@@ -5,8 +5,8 @@
 #include <iterator>
 
 template <class It>
-void imprime(It begin, It end, const char* nome) {
-  std::cout << nome << " = [ ";
+void print_range(It begin, It end, const char* name) {
+  std::cout << name << " = [ ";
   for (auto it = begin; it != end; ++it) {
     std::cout << *it << ' ';
   }
@@ -15,28 +15,28 @@ void imprime(It begin, It end, const char* nome) {
 
 int main() {
   int a[7]{5, 1, 7, 3, 3, 2, 9};
-  imprime(std::begin(a), std::end(a), "a (original)");
+  print_range(std::begin(a), std::end(a), "a (original)");
 
   std::sort(std::begin(a), std::end(a));
-  imprime(std::begin(a), std::end(a), "a (sort)");
+  print_range(std::begin(a), std::end(a), "a (sort)");
 
   std::reverse(std::begin(a), std::end(a));
-  imprime(std::begin(a), std::end(a), "a (reverse)");
+  print_range(std::begin(a), std::end(a), "a (reverse)");
 
   auto [mn, mx] = std::minmax_element(std::begin(a), std::end(a));
   std::cout << "min = " << *mn << ", max = " << *mx << "\n";
 
-  // Para binary_search, o range precisa estar ordenado.
+  // For binary_search, the range must be sorted.
   std::sort(std::begin(a), std::end(a));
-  const int alvo = 7;
-  bool achou = std::binary_search(std::begin(a), std::end(a), alvo);
-  std::cout << "binary_search(" << alvo << ") = " << (achou ? "true" : "false") << "\n";
+  const int target = 7;
+  bool found = std::binary_search(std::begin(a), std::end(a), target);
+  std::cout << "binary_search(" << target << ") = " << (found ? "true" : "false") << "\n";
 
-  // O mesmo vale para std::array.
+  // The same applies to std::array.
   std::array<int, 5> b{4, 2, 8, 1, 6};
-  imprime(b.begin(), b.end(), "b (original)");
+  print_range(b.begin(), b.end(), "b (original)");
   std::sort(b.begin(), b.end());
-  imprime(b.begin(), b.end(), "b (sort)");
+  print_range(b.begin(), b.end(), "b (sort)");
 
   return 0;
 }

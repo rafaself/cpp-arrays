@@ -48,6 +48,6 @@ File: `12_pointer_to_array_vs_array_of_pointers.cpp`
 ## How to build and run
 
 ```bash
-g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g array/12_pointer_to_array_vs_array_of_pointers.cpp -o app
+g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g 12_pointer_to_array_vs_array_of_pointers.cpp -o app
 ./app
 ```

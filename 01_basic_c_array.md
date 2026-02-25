@@ -35,6 +35,6 @@ File: `01_basic_c_array.cpp`
 ## How to build and run
 
 ```bash
-g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g array/01_basic_c_array.cpp -o app
+g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g 01_basic_c_array.cpp -o app
 ./app
 ```

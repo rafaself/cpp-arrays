@@ -38,6 +38,6 @@ File: `03_array_to_pointer_decay.cpp`
 ## How to build and run
 
 ```bash
-g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g array/03_array_to_pointer_decay.cpp -o app
+g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g 03_array_to_pointer_decay.cpp -o app
 ./app
 ```

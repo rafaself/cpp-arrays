@@ -45,6 +45,6 @@ File: `10_stl_algorithms.cpp`
 ## How to build and run
 
 ```bash
-g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g array/10_stl_algorithms.cpp -o app
+g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g 10_stl_algorithms.cpp -o app
 ./app
 ```

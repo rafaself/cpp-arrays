@@ -37,6 +37,6 @@ File: `06_std_array.cpp`
 ## How to build and run
 
 ```bash
-g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g array/06_std_array.cpp -o app
+g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g 06_std_array.cpp -o app
 ./app
 ```

@@ -1,4 +1,4 @@
-# 09 — `std::span` e views (`subspan`, `first`, `last`) — C++20
+# 09 — `std::span` and views (`subspan`, `first`, `last`) — C++20
 
 ## Goal
 
@@ -45,6 +45,6 @@ File: `09_span_views.cpp`
 This module uses **C++20**.
 
 ```bash
-g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g array/09_span_views.cpp -o app
+g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g 09_span_views.cpp -o app
 ./app
 ```

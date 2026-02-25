@@ -41,6 +41,6 @@ File: `08_dynamic_new_delete_and_raii.cpp`
 ## How to build and run
 
 ```bash
-g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g array/08_dynamic_new_delete_and_raii.cpp -o app
+g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g 08_dynamic_new_delete_and_raii.cpp -o app
 ./app
 ```

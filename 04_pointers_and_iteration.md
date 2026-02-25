@@ -37,6 +37,6 @@ File: `04_pointers_and_iteration.cpp`
 ## How to build and run
 
 ```bash
-g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g array/04_pointers_and_iteration.cpp -o app
+g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g 04_pointers_and_iteration.cpp -o app
 ./app
 ```

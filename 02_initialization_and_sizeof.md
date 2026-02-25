@@ -40,6 +40,6 @@ File: `02_initialization_and_sizeof.cpp`
 ## How to build and run
 
 ```bash
-g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g array/02_initialization_and_sizeof.cpp -o app
+g++ -std=c++20 -O2 -Wall -Wextra -pedantic -g 02_initialization_and_sizeof.cpp -o app
 ./app
 ```
